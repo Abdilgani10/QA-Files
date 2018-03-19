@@ -1,20 +1,36 @@
 
-public class vehicle {
+public class vehicle extends MainRunner {
 	
 
+	private int id;
+	private String make;
 	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	vehicle (int id, String make){
 		
-		car car1 = new car ("blue" , 4);
-		motorcycle motorcycle1 = new motorcycle ("red" , 2);
-		
-		vehicle array [] = {car1, motorcycle1};
-		
-		for ( int i = 0; i < array.length; i++){
-			System.out.println(array[i].getcolor());
-		}
-
+		this.id =id;
+		this.make = make;
 	}
-
+	
+	int getid(){
+		
+		return id;
+	}
+	
+	String getmake(){
+		
+		return make;
+	}
+	
+	void print(){
+		
+		
+		System.out.println("id: " +  id  + " make: " +  make);
+	//}
 }
+	
+}
+
+
+
+		
+		
